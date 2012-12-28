@@ -5,6 +5,10 @@ iBooks-style 3D flip transition animation rendered in OpenGL ES 2.0 and wrapped 
 
 Full Readme coming soon. Just set this class as a custom segue and it'll work right away.
 
+Screenshot of the component:
+
+![image](https://github.com/GlennChiu/GC3DFlipTransitionStyleSegue/blob/master/Screenshot.png?raw=true)
+
 License
 -------
 
