@@ -1,13 +1,43 @@
 GC3DFlipTransitionStyleSegue
 ============================
 
-iBooks-style 3D flip transition animation rendered in OpenGL ES 2.0 and wrapped in a UIStoryboardSegue subclass
+iBooks-style 3D flip transition animation rendered in OpenGL ES 2.0 and wrapped in a UIStoryboardSegue subclass.
 
-Full Readme coming soon. Just set this class as a custom segue and it'll work right away.
+Comparison between iBooks and this segue class:
 
-Screenshot of the component:
+![image](https://dl.dropbox.com/u/10505256/Comparison.png)
 
-![image](https://github.com/GlennChiu/GC3DFlipTransitionStyleSegue/blob/master/Screenshot.png?raw=true)
+Features / Design
+-----------------
+- Uses OpenGL ES rendering instead of Core Animation for high performance and shader effects.
+- Uses GLKit to drastically reduce the amount of OpenGL ES 2.0 code (to write and maintain).
+- Inspired by Apple's 3D flip view controller transition animation, as found in iOS apps like iBooks, iTunes U and Podcasts.
+- Supports different screen sizes and screen orientations.
+
+Requirements
+------------
+GC3DFlipTransitionStyleSegue requires iOS 5.0 and above.
+
+Installation
+------------
+Add the source code to your project (and image file if you want to use it). Link your target against QuartzCore.framework, GLKit.framework and OpenGLES.framework.
+
+CocoaPods support is coming soon.
+
+If you use this class in a non-ARC project, make sure you add the -fobjc-arc compiler flag for the implementation file.
+
+Quick setup: Just set this class as a custom segue and it'll work right away.
+
+![image](https://dl.dropbox.com/u/10505256/SetCustomSegue.png)
+
+Customization
+-------------
+![image](https://dl.dropbox.com/u/10505256/CustomizationEffects.png)
+
+Todo
+----
+- Add option to flip view controllers in opposite direction like Apple's Podcasts app.
+- Improve snapshot performance on the iPad.
 
 License
 -------
