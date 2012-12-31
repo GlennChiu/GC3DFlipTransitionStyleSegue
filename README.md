@@ -37,6 +37,12 @@ Quick setup: Just set this class as a custom segue and it'll work right away.
 
 Customization
 -------------
+To change the default texture on the side, change these macros:
+```objectivec
+#define IMAGE_NAME  @"wood"
+#define IMAGE_TYPE  @"jpg"
+```
+
 Exposed in the header file are some customization properties:
 
 ### - Depth
@@ -68,7 +74,7 @@ Depth value set like the iTunes U app (bit smaller than iBooks).
 extern float kGC3DFlipTransitionStyle_iBooks
 ```
 
-Dept value set like the iBooks (and Podcasts) app.
+Dept value set like the iBooks (and Podcasts) app. This is the default value.
 
 ### - disableLightEffect
 
