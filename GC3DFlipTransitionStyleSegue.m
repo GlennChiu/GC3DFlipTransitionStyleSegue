@@ -31,6 +31,10 @@
 #error GC3DFlipTransitionStyleSegue is ARC only. Use -fobjc-arc as compiler flag for this library
 #endif
 
+#if defined(__STRICT_ANSI__)
+#error GC3DFlipTransitionStyleSegue needs to be compiled with the GNU99 C Language dialect.
+#endif
+
 #ifdef DEBUG
 #   define GCNRLog(fmt, ...) NSLog((@"%s [Line %d]\n" fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 #else
