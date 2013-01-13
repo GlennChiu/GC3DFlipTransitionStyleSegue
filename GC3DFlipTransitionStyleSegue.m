@@ -206,6 +206,9 @@ static const Vertex _verticesInit[] =
     glDeleteBuffers(1, &self->_vertexBuffer);
     glDeleteVertexArraysOES(1, &self->_vertexArray);
     
+    GLKView *view = (GLKView *)self.view;
+    view.context = nil;
+    
     [EAGLContext setCurrentContext:nil];
     
     self->_context = nil;
