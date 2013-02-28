@@ -9,5 +9,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '5.0'
   s.source_files = '*.{h,m}'
   s.public_header_files = '*.h'
+  s.frameworks  = 'GLKit', 'OpenGLES'
   s.requires_arc = true
 end
