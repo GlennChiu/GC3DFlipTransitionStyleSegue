@@ -1,4 +1,6 @@
 //
+//  Version 1.0.0
+//
 //  This code is distributed under the terms and conditions of the zlib license.
 //
 //  Copyright (c) 2013 Glenn Chiu
@@ -28,11 +30,11 @@
 #import <GLKit/GLKit.h>
 
 #if ! __has_feature(objc_arc)
-#error GC3DFlipTransitionStyleSegue is ARC only. Use -fobjc-arc as compiler flag for this library
+#   error GC3DFlipTransitionStyleSegue is ARC only. Use -fobjc-arc as compiler flag for this library
 #endif
 
 #if defined(__STRICT_ANSI__)
-#error GC3DFlipTransitionStyleSegue needs to be compiled with the GNU99 C Language dialect.
+#   error GC3DFlipTransitionStyleSegue needs to be compiled with the GNU99 C Language dialect.
 #endif
 
 #ifdef DEBUG
@@ -129,8 +131,8 @@ static const Vertex _verticesInit[] =
     
     if ([self isViewLoaded] && self.view.window == nil)
     {
-        self.view = nil;
         [self tearDownGL];
+        self.view = nil;
     }
 }
 

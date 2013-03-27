@@ -1,4 +1,6 @@
 //
+//  Version 1.0.0
+//
 //  This code is distributed under the terms and conditions of the zlib license.
 //
 //  Copyright (c) 2013 Glenn Chiu
