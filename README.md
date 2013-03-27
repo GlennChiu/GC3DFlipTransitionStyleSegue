@@ -27,7 +27,7 @@ Installation
 ------------
 Add the source code to your project (and image file if you want to use it). Link your target against `QuartzCore.framework`, `GLKit.framework` and `OpenGLES.framework`.
 
-CocoaPods support is coming soon.
+CocoaPods support: `pod 'GC3DFlipTransitionStyleSegue'`
 
 If you use this class in a non-ARC project, make sure you add the -fobjc-arc compiler flag for the implementation file.
 
